@@ -14,3 +14,8 @@ let numbers_new: (number | string)[] = [1, 2, 3, "hello world"];
 
 // tuples (fixed length array)
 let user: [number, string] = [1, "Wale"]
+
+// enums
+enum Size {Small=10, Medium, Large};
+let mySize: Size = Size.Medium;
+console.log(`my size = ${mySize}`);
