@@ -30,12 +30,15 @@ function calculateTax(income: number, taxYear: number = 2023): number {
 
 calculateTax(10_000);
 
-// objects
-let employee: {
+type Employee = {
     readonly id: number, 
     name: string,
     retire: (date: Date) => void
-} = {
+
+}
+
+// objects
+let employee: Employee = {
     id: 1, 
     name: "Wale",
     retire: (date: Date) => {
