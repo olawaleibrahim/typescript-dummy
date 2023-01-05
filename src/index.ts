@@ -46,3 +46,15 @@ let employee: Employee = {
     }
 };
 // employee.id = 0; readonly property
+
+// union types
+function kgToLbs(weight: number | string): number {
+    // Narrowing
+    if (typeof weight === "number")
+        return weight * 2.2
+    else
+        return parseInt(weight) * 2.2
+}
+
+console.log(`kg to lbs: ${kgToLbs(10)}`);
+console.log(`kg to lbs: ${kgToLbs("10kg")}`);
