@@ -1,0 +1,4 @@
+console.log("Hello world")
+
+let age: number = 20
+age = 3;
