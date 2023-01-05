@@ -18,4 +18,11 @@ var Size;
 ;
 let mySize = Size.Medium;
 console.log(`my size = ${mySize}`);
+function calculateTax(income, taxYear = 2023) {
+    if (taxYear < 2023) {
+        return income * 2;
+    }
+    return income * 1.3;
+}
+calculateTax(10000);
 //# sourceMappingURL=index.js.map
